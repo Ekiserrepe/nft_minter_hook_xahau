@@ -58,7 +58,7 @@ drops.toString(16).padStart(16, '0').toUpperCase()
 The compiled WASM has been deployed on-chain. Its hash is:
 
 ```
-C0C0C581C3F05BE7EA568D6FEC8C8E89C5BFB35537483ED696B608BC17CFB1D4
+033EC3AB4EDA2617E698642E1B8E7B9324511D67A23F652CC302D91C8FB06031
 ```
 
 This hash is the same on **both Xahau Testnet and Xahau Mainnet**, allowing installation via `HookHash` without re-uploading the WASM bytecode.

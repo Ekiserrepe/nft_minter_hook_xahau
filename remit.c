@@ -140,6 +140,13 @@ int64_t hook(uint32_t reserved)
     if (tt != 0)
         accept(SBUF("HUR :: Not a Payment. Accepting."), __LINE__);
 
+    int equal = 0;
+    BUFFER_EQUAL(equal, hook_acc, otx_acc, 20);
+
+    // If destination is NOT the hook account, allow the tx
+    if (equal)
+        accept(SBUF("HUR :: Outgoing or unrelated Payment. Accepting."), __LINE__);
+
     // ── AMOUNT validation ────────────────────────────────────────────────────
     // Read the AMOUNT (drops required, big-endian uint64, 8 bytes)
     int64_t required_drops = read_amount_param();

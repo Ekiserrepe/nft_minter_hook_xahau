@@ -21,7 +21,7 @@ async function connectAndQuery() {
       "Hooks": [
         {
           "Hook": {
-            "HookHash": "C0C0C581C3F05BE7EA568D6FEC8C8E89C5BFB35537483ED696B608BC17CFB1D4",
+            "HookHash": "033EC3AB4EDA2617E698642E1B8E7B9324511D67A23F652CC302D91C8FB06031",
             "HookOn": 'FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFBFFFFE', //Only Payments https://richardah.github.io/xrpl-hookon-calculator/
             "HookCanEmit": "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF7FFFFFFFFFFFFFFFFFBFFFFF", //Can emit remits
             "HookNamespace": crypto.createHash('sha256').update('remit').digest('hex').toUpperCase(),
